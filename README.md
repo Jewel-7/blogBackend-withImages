@@ -11,7 +11,11 @@ All Blog data/images are stored in the Mongoose Database
 
 # How to Start
 Type npm i to install all dependencies(In Terminal)
+
+
 Enter your monngo Url in config.env for connecting to Database
+
+
 Enter nodemon app.js to start the server(In Terminal)
 
 # Find all Blogs
