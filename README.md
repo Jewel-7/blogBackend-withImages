@@ -4,6 +4,8 @@ Simple blog backend made by using express servers and node.js
 
 Blog content/Images can be fetched  from mongoDatabse using the unique id
 
+Multer has been used to send images from server to Database
+
 
 Postman is used for doing Get request and Fetching data
 
@@ -28,17 +30,23 @@ After the url type /finduni/:("valid id") to get a single Blog
 After the url type /create to create a New Blog 
 
 Enter Valid keys such as {Bloghaeder,blogContent,imageUrl,relatedLinks(optional)}
-Type this keys in the body(form-data) and the value in the value section
-To send an image type imageUrl in key and chnage it to "File" then select the image You want to send
+
+
+Type the keys in the body(form-data) and their value in the value section
+
+
+To send an image type imageUrl in key and change it to "File" then select the image You want to send
 
 # Update Blog
 After the url type /update/:("valid id") to update a blog
-Enter the valid keys in the body(raw) to upadte their values
+
+Enter the valid keys in the body(raw)along with the new values to update their values
 
 note: For updating the body must contain valid keys
 
 # To UpDate the image
 After the url type /updateimg/:("valid id") to update a Image
+
 Enter the key (imageUrl) in the body (form-data) and select a new image You want to update
 
 # Delete Blog
